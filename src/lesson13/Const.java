@@ -1,16 +1,18 @@
 package lesson13;
 
+import java.util.Map;
+
 public class Const implements Expression {
 
-    private int value;
+    private String value;
 
-    public Const(int value) {
+    public Const(String value) {
         this.value = value;
     }
 
     @Override
-    public int calculate() {
-        return value;
+    public int calculate(Map<String, Integer> map) {
+        return map.get(value);
     }
 
 }
