@@ -8,7 +8,7 @@ public class MainFrame extends JFrame {
     public MainFrame() {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         Border solidBorder = BorderFactory.createLineBorder(Color.ORANGE, 4);
-       // setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
         setPreferredSize(new Dimension(300, 300));
         setLocation(300, 300);
         setTitle("SuperCalculator");
